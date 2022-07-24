@@ -3,6 +3,12 @@
   margin: 0px auto;
 }
 
+.heading{
+  animation-name: HeadingAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
 button{
   background: none;
   border: 2px solid #fff;
@@ -61,4 +67,27 @@ button:hover{
 .flipped .back{
   transform: rotateY(90deg);
   transition-delay: 0.2s;
+}
+
+.details{
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@keyframes HeadingAnimation {
+  0%{
+    color: #ffc2fe;
+  }20%{
+    color: #732592;
+  }40%{
+    color: #b85cbf;
+  }60%{
+    color: #ec98f6;
+  }80%{
+    color: #dc6ee5;
+  }100%{
+    color: #933c9d;
+  }
 }
