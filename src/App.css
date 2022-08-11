@@ -23,6 +23,7 @@
   animation-name: HeadingAnimation;
   animation-duration: 10s;
   animation-iteration-count: infinite;
+  padding: 10px;
 }
 
 button{
