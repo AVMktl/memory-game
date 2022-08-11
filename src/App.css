@@ -1,11 +1,27 @@
-.App{
+.main-App{
   max-width: 700px;
   margin: 0px auto;
 }
 
+.design-img1 img{
+  width: 300px;
+  position: absolute;
+  left:0;
+  bottom: 3em;
+}
+
+.design-img2 img{
+  width: 300px;
+  position: absolute;
+  right:0;
+  bottom: 5em;
+}
+
 .heading{
+  margin-top: 0;
+  color: white;
   animation-name: HeadingAnimation;
-  animation-duration: 3s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
 }
 
@@ -26,7 +42,7 @@ button:hover{
 }
 
 .card-grid{
-   margin-top: 40px;
+  margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
@@ -78,16 +94,14 @@ button:hover{
 
 @keyframes HeadingAnimation {
   0%{
-    color: #ffc2fe;
-  }20%{
-    color: #732592;
-  }40%{
-    color: #b85cbf;
-  }60%{
-    color: #ec98f6;
-  }80%{
-    color: #dc6ee5;
+    background-color: #732592;
+  }25%{
+    background-color: #b85cbf;
+  }50%{
+    background-color: #ec98f6;
+  }75%{
+    background-color: #dc6ee5;
   }100%{
-    color: #933c9d;
+    background-color: #933c9d;
   }
 }

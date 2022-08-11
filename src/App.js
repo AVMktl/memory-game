@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Singlecard from "./component/Singlecard";
+import designImg from "./component/designImg.png";
+import designImg2 from "./component/designImg2.png";
 
 const cardImages = [
   { src: "/img/book_img.jpg", matched: false },
@@ -87,13 +89,18 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <h1 className="heading">Memory Up</h1>
+   <div className="app">
+    <h1 className="heading">Memory Up</h1>
+     <div className="design-img1">
+      <img src={designImg} alt="" />
+      </div>
+      <div className="main-App">
+      
       <div className="details">
         <p>Turns: {turns}</p>
         <button onClick={shuffleCards}>New Game</button>
       </div>
-
+  
       <div className="card-grid">
         {cards.map((card) => {
           return (
@@ -108,6 +115,10 @@ function App() {
         })}
       </div>
     </div>
+    <div className="design-img2">
+      <img src={designImg2} alt="" />
+      </div>
+   </div>
   );
 }
 
