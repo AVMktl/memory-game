@@ -1,10 +1,12 @@
 import React from "react";
+import sound from "../sound/flipSound.wav"
 
 const Singlecard = ({card, handleChoice, flipped, disabled}) => {
 
   const handleClick = () => {
     if(!disabled){
-        handleChoice(card)
+      new Audio(sound).play();
+      handleChoice(card)
     }
   }
 
